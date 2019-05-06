@@ -59,7 +59,7 @@ pipeline {
                 banch 'master'
             }
             steps {
-                script{
+                script {
                     def response = httpRequest {
                         url: "http://$KUBE_MASTER_IP:8081/",
                         timeout: 30
