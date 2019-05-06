@@ -56,7 +56,7 @@ pipeline {
         }
         stage ('SmokeTest') {
             when {
-                banch 'master'
+                branch 'master'
             }
             steps {
                 script {
